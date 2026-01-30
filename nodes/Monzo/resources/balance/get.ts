@@ -1,6 +1,6 @@
 import type { INodeProperties } from 'n8n-workflow';
 
-export const accountGetDescription: INodeProperties[] = [
+export const balanceGetDescription: INodeProperties[] = [
 	{
 		displayName: 'Account ID',
 		name: 'accountId',
@@ -8,7 +8,7 @@ export const accountGetDescription: INodeProperties[] = [
 		required: true,
 		displayOptions: {
 			show: {
-				resource: ['account'],
+				resource: ['balance'],
 				operation: ['getBalance'],
 			},
 		},

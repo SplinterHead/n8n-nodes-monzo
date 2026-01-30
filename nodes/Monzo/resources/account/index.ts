@@ -1,5 +1,4 @@
 import type { INodeProperties } from 'n8n-workflow';
-import { accountGetDescription } from './get';
 
 export const accountDescription: INodeProperties[] = [
 	{
@@ -24,22 +23,7 @@ export const accountDescription: INodeProperties[] = [
 					},
 				},
 			},
-			{
-				name: 'Get Balance',
-				value: 'getBalance',
-				action: 'Get balance for an account',
-				routing: {
-					request: {
-						method: 'GET',
-						url: '/balance',
-						qs: {
-							account_id: '={{$parameter["accountId"]}}',
-						},
-					},
-				},
-			},
 		],
 		default: 'getAll',
 	},
-	...accountGetDescription,
 ];
