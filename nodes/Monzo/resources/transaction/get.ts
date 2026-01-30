@@ -29,11 +29,11 @@ export const transactionGetDescription: INodeProperties[] = [
 		displayOptions: {
 			show: {
 				resource: ['transaction'],
-				operation: ['get'],
+				operation: ['annotate', 'get'],
 			},
 		},
 		default: '',
-		description: 'The ID of the transaction to retrieve',
+		description: 'The ID of the transaction',
 	},
 	{
 		displayName: 'Limit',

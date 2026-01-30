@@ -1,5 +1,6 @@
 import { INodeProperties } from 'n8n-workflow';
 import { transactionGetDescription } from './get';
+import { transactionPatchDescription } from './patch';
 
 export const transactionDescription: INodeProperties[] = [
 	{
@@ -38,8 +39,23 @@ export const transactionDescription: INodeProperties[] = [
 					},
 				},
 			},
+			{
+				name: 'Annotate',
+				value: 'annotate',
+				action: 'Annotate a transaction',
+				routing: {
+					request: {
+						method: 'PATCH',
+						url: '=/transactions/{{$parameter["transactionId"]}}',
+						headers: {
+							'Content-Type': 'application/x-www-form-urlencoded',
+						},
+					},
+				},
+			},
 		],
 		default: 'getAll',
 	},
 	...transactionGetDescription,
+	...transactionPatchDescription,
 ];
