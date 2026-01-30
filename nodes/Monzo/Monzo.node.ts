@@ -2,6 +2,7 @@ import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from '
 import { accountDescription } from './resources/account';
 import { balanceDescription } from './resources/balance';
 import { potDescription } from './resources/pot';
+import { transactionDescription } from './resources/transaction';
 
 export class Monzo implements INodeType {
 	description: INodeTypeDescription = {
@@ -45,12 +46,17 @@ export class Monzo implements INodeType {
 						name: 'Pot',
 						value: 'pot',
 					},
+					{
+						name: 'Transaction',
+						value: 'transaction',
+					},
 				],
 				default: 'account',
 			},
 			...accountDescription,
 			...balanceDescription,
 			...potDescription,
+			...transactionDescription,
 		],
 	};
 }
