@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-monzo",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "An n8n community node that lets you connect Monzo bank to your workflows",
   "license": "MIT",
   "homepage": "",

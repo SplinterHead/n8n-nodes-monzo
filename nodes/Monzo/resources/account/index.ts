@@ -1,4 +1,5 @@
 import type { INodeProperties } from 'n8n-workflow';
+import { accountGetDescription } from './get';
 
 export const accountDescription: INodeProperties[] = [
 	{
@@ -26,4 +27,5 @@ export const accountDescription: INodeProperties[] = [
 		],
 		default: 'getAll',
 	},
+	...accountGetDescription,
 ];
