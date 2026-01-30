@@ -5,7 +5,7 @@ export class Monzo implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Monzo',
 		name: 'monzo',
-		icon: 'file:./monzo.svg',
+		icon: { light: "file:../../icons/monzo.light.svg", dark: 'file:../../icons/monzo.dark.svg' },
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["resource"] + ": " + $parameter["operation"]}}',

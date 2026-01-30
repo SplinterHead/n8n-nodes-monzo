@@ -4,7 +4,7 @@ export class MonzoOAuth2Api implements ICredentialType {
 	name = 'monzoOAuth2Api';
 	extends = ['oAuth2Api'];
 	displayName = 'Monzo OAuth2 API';
-	icon: Icon = "file:../nodes/Monzo/monzo.svg";
+	icon: Icon = { light: "file:../icons/monzo.light.svg", dark: 'file:../icons/monzo.dark.svg' };
 	documentationUrl = "https://github.com/SplinterHead/n8n-nodes-monzo?tab=readme-ov-file#credentials";
 	properties: INodeProperties[] = [
 		{
