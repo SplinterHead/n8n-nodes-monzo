@@ -1,5 +1,6 @@
 import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
 import { accountDescription } from './resources/account';
+import { potDescription } from './resources/pot';
 
 export class Monzo implements INodeType {
 	description: INodeTypeDescription = {
@@ -35,10 +36,15 @@ export class Monzo implements INodeType {
 						name: 'Account',
 						value: 'account',
 					},
+					{
+						name: 'Pot',
+						value: 'pot',
+					},
 				],
 				default: 'account',
 			},
 			...accountDescription,
+			...potDescription,
 		],
 	};
 }
