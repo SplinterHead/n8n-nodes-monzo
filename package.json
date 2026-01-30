@@ -21,8 +21,7 @@
     "dev": "n8n-node dev",
     "lint": "n8n-node lint",
     "lint:fix": "n8n-node lint --fix",
-    "release": "n8n-node release",
-    "prepublishOnly": "n8n-node prerelease"
+    "release": "n8n-node release"
   },
   "files": [
     "dist"
@@ -34,7 +33,8 @@
       "dist/credentials/MonzoOAuth2Api.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/Monzo/Monzo.node.js"
+      "dist/nodes/Monzo/Monzo.node.js",
+      "dist/nodes/MonzoTrigger/MonzoTrigger.node.js"
     ]
   },
   "devDependencies": {
