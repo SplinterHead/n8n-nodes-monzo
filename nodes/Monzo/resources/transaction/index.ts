@@ -24,6 +24,7 @@ export const transactionDescription: INodeProperties[] = [
 						url: '/transactions',
 						qs: {
 							account_id: '={{$parameter["accountId"]}}',
+							"expand[]": '=merchant',
 						},
 					},
 				},
@@ -36,6 +37,9 @@ export const transactionDescription: INodeProperties[] = [
 					request: {
 						method: 'GET',
 						url: '=/transactions/{{$parameter["transactionId"]}}',
+						qs: {
+							"expand[]": '=merchant',
+						},
 					},
 				},
 			},
