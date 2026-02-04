@@ -1,3 +1,21 @@
+# 1.0.0 (2026-02-04)
+
+
+### Bug Fixes
+
+* **package:** enable the webhook node ([ca02410](https://github.com/SplinterHead/n8n-nodes-monzo/commit/ca02410d0d051b061c6ccaa43ca332efb06b76bd))
+
+
+### Features
+
+* **account:** optionally filter the list of accounts to Personal or Joint ([9c1e4af](https://github.com/SplinterHead/n8n-nodes-monzo/commit/9c1e4afabeead7ad3a0d8c92ab0f8849041afc46))
+* expand the merchant details as part of the request ([98dcf9e](https://github.com/SplinterHead/n8n-nodes-monzo/commit/98dcf9edd3d3d26319c804c255054cbf4465195a))
+* **pots:** actions for listing pots and moving money between accounts and pots ([41952a7](https://github.com/SplinterHead/n8n-nodes-monzo/commit/41952a7bafa03b1815fbf6409f74005dd9941d5c))
+* **repo:** Initial commit with account action ([cec1757](https://github.com/SplinterHead/n8n-nodes-monzo/commit/cec1757288906e1bdecaf23662a54ddfc630b5df))
+* **transactions:** add action for getting transactions ([81b4810](https://github.com/SplinterHead/n8n-nodes-monzo/commit/81b4810750c30e210e4807bc13f24419227f27ee))
+* **transactions:** allow annotation of transactions ([b8da04d](https://github.com/SplinterHead/n8n-nodes-monzo/commit/b8da04dd2eaf78e549496bcc3bf10af64698e5c4))
+* **webhook:** add webhook trigger to allow transactions to begin workflows ([55c60bf](https://github.com/SplinterHead/n8n-nodes-monzo/commit/55c60bf11f174b280626513d25f49e5d2f7fcdb2))
+
 ### Changelog
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
